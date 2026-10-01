@@ -443,6 +443,8 @@ button:focus-visible,.tu-btn:focus-visible{outline:3px solid var(--sun);outline-
 .cc-pick #cPickTxt b{color:#ffc94d;font-family:'IBM Plex Mono',monospace;font-size:22px;display:block;margin-top:2px}
 @media (max-width:760px){.cc-row{grid-template-columns:28px 1fr!important}.cc-row .cc-bar,.cc-row .cc-val{grid-column:1/-1}}
 @media (max-width:760px){.cc-row{grid-template-columns:1fr}.cc-val{text-align:left;min-width:0}.cc-input input{font-size:34px}}
+#s-offer{padding-bottom:40px}
+#s-truth{padding-top:24px}
 #s-offer .eyebrow,#s-offer .sec-title,#s-offer .lead{text-align:center}
 #s-offer .lead{margin-left:auto!important;margin-right:auto!important;max-width:720px}
 #s-offer .of-note{text-align:center}
@@ -729,7 +731,7 @@ body.locked{overflow:hidden}
   <div class="wrap">
     <div class="eyebrow">What we offer</div>
     <h2 class="frame sec-title">The full trust stack — and how to ship it</h2>
-    <p class="lead">Four qualified services on one Trust Units wallet, delivered through the integration path that fits your architecture.</p>
+    <p class="lead">Four qualified services, delivered through the integration path that fits your architecture.</p>
 
     <div class="svc-toggle tu-btns" id="svcToggle" role="tablist" aria-label="Services and integration">
       <button class="tu-btn active" data-p="services" role="tab" aria-selected="true">What we offer</button>
@@ -740,22 +742,10 @@ body.locked{overflow:hidden}
       <!-- SERVICES -->
       <div class="svc-panel show" data-panel="services" role="tabpanel">
         <div class="svc-grid svc-grid-4">
-          <article class="svc-card">
-            <div class="svc-top"><h3>eID Verification</h3><span class="svc-tu mono">3 TU</span></div>
-            <p>Remote KYC/AML identity, eIDAS LoA High. 61 nationalities, verified in ~2 min.</p>
-          </article>
-          <article class="svc-card">
-            <div class="svc-top"><h3>Qualified eSignature</h3><span class="svc-tu mono">1 TU</span></div>
-            <p>Legally binding across all 27 EU member states. Issued automatically after eID.</p>
-          </article>
-          <article class="svc-card">
-            <div class="svc-top"><h3>Qualified eDelivery</h3><span class="svc-tu mono">1 TU</span></div>
-            <p>Certified document delivery. Tamper-proof audit trail, evidence kept 10 years.</p>
-          </article>
-          <article class="svc-card">
-            <div class="svc-top"><h3>2FA &amp; eTimestamp</h3><span class="svc-tu mono">0.05 / 0.02 TU</span></div>
-            <p>PSD2-SCA authentication and qualified proof of time.</p>
-          </article>
+          <article class="svc-card"><div class="svc-top"><h3>eID Verification</h3></div></article>
+          <article class="svc-card"><div class="svc-top"><h3>Qualified eSignature</h3></div></article>
+          <article class="svc-card"><div class="svc-top"><h3>Qualified eDelivery</h3></div></article>
+          <article class="svc-card"><div class="svc-top"><h3>2FA &amp; eTimestamp</h3></div></article>
         </div>
       </div>
 
@@ -912,61 +902,6 @@ body.locked{overflow:hidden}
       <div class="step"><div class="num"></div><div><h4>Make the case</h4><p>Identify the need and decision-makers, and get a sense of budget.</p></div></div>
       <div class="step"><div class="num"></div><div><h4>Close within six months</h4><p>The deal must be closed-won within six months of the referral submission.</p></div></div>
       <div class="step"><div class="num"></div><div><h4>Stay active</h4><p>Referral fees aren't available to partners acting as resellers. Active status is based on new-business revenue from the previous year.</p></div></div>
-    </div>
-  </div>
-</section>
-
-<div class="sep"><i></i></div>
-
-<!-- TRUST UNITS -->
-<section class="reveal" id="s-tu">
-  <div class="wrap">
-    <div class="eyebrow">The currency</div>
-    <h2 class="frame sec-title">Everything runs on Trust Units</h2>
-    <p class="lead" style="margin-top:20px">One standardized unit measures all platform usage. Fill your Evrotrust Wallet with Trust Units and spend them across any service — current or new — any way you want.</p>
-
-    <div class="tu-wrap">
-      <div>
-        <p style="font-weight:600;margin-bottom:16px">Tap a service to see what it costs:</p>
-        <div class="tu-btns" id="tuBtns">
-          <button class="tu-btn active" data-v="1" data-d="Qualified e-signature of a document. Covers a standard transaction value up to €20,000." data-h="Most common">QES of a document</button>
-          <button class="tu-btn" data-v="0.7" data-d="Qualified e-signature over a hash of a document." data-h="Hash signing">QES over a hash</button>
-          <button class="tu-btn" data-v="0.7" data-d="Advanced e-signature over a document." data-h="AES">Advanced e-signature</button>
-          <button class="tu-btn" data-v="3" data-d="Remote eID verification — done only once per person. No need to re-identify for each signature." data-h="One-time per person">eID verification</button>
-          <button class="tu-btn" data-v="1" data-d="Qualified e-delivery with the same legal value as registered mail." data-h="Registered-mail value">Qualified e-delivery</button>
-          <button class="tu-btn" data-v="0.05" data-d="Two-factor authentication based on combined biometry." data-h="Strong auth">2FA</button>
-          <button class="tu-btn" data-v="0.02" data-d="Qualified timestamp — proof of time for documents and logs." data-h="Proof of time">Qualified timestamp</button>
-        </div>
-      </div>
-      <div class="tu-readout">
-        <div class="val" id="tuVal">1<small> TU</small></div>
-        <div class="desc" id="tuDesc">Qualified e-signature of a document. Covers a standard transaction value up to €20,000.</div>
-        <div class="hint" id="tuHint">Most common</div>
-      </div>
-    </div>
-
-    <div class="flow">
-      <div class="node">eSign<small>1 TU</small></div>
-      <div class="node">eID<small>3 TU</small></div>
-      <div class="node">eDelivery<small>1 TU</small></div>
-      <div class="node">All new products<small>mapped to TU</small></div>
-      <span class="arr">→</span>
-      <div class="node">Trust Unit Package</div>
-      <span class="arr">→</span>
-      <div class="node">Referral / Reseller</div>
-      <span class="arr">→</span>
-      <div class="node">Business Clients</div>
-    </div>
-
-    <div class="grid2" style="margin-top:40px">
-      <div class="model res"><div class="bar" style="background:linear-gradient(120deg,#16a085,#1abc9c)"></div>
-        <div class="tag">Pay-as-you-go</div><h3>No one-off costs</h3>
-        <div class="who" style="margin-bottom:0">Start with zero commitment. Embedded discounts kick in automatically as your volume grows.</div>
-      </div>
-      <div class="model ref"><div class="bar"></div>
-        <div class="tag">Committed volume</div><h3>Lower cost, bigger discount</h3>
-        <div class="who" style="margin-bottom:0">Commit to usage levels for lower prices — the larger the commitment, the greater the discount. Spend across multiple channels and services.</div>
-      </div>
     </div>
   </div>
 </section>
@@ -1190,17 +1125,6 @@ body.locked{overflow:hidden}
     else if(e.key==='Home'){ go=0; }
     else if(e.key==='End'){ go=sections.length-1; }
     if(go!==null){ e.preventDefault(); current=go; sections[go].scrollIntoView({behavior: rm?'auto':'smooth', block:'start'}); }
-  });
-
-  /* TU explorer */
-  var val=document.getElementById('tuVal'), desc=document.getElementById('tuDesc'), hint=document.getElementById('tuHint');
-  document.getElementById('tuBtns').addEventListener('click',function(e){
-    var b=e.target.closest('.tu-btn'); if(!b) return;
-    this.querySelectorAll('.tu-btn').forEach(function(x){x.classList.remove('active');});
-    b.classList.add('active');
-    val.innerHTML=b.dataset.v+'<small> TU</small>';
-    desc.textContent=b.dataset.d;
-    hint.textContent=b.dataset.h;
   });
 
   /* animated counters */
